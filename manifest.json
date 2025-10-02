@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "MyCoal Auto Clicker",
+  "version": "1.4",
+  "description": "ALT+P bosilganda avtomatik ariza formasini to‘ldiradi va OTP kodni olib kiritadi",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": [
+    "https://e0mt6i-ip-95-214-211-158.tunnelmole.net/*",
+    "https://api.mycoal.uz/*",
+    "https://mycoal.uz/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "run-automation": {
+      "suggested_key": {
+        "default": "Alt+P"
+      },
+      "description": "Arizani avtomatik to‘ldirishni ishga tushirish"
+    }
+  }
+}
